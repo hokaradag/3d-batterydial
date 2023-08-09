@@ -1,0 +1,30 @@
+Scene: Bu fonksiyon, sahnenin bileşenlerini tanımlar: Işık kaynakları, bir küp (alt tabaka olarak hizmet eder), bir küre ve bir koni.
+
+AmbientLight: Genel aydınlatma sağlar.
+
+SpotLight: Belirli bir konumdan sahneye ışık saçar.
+
+PointLight: Belirli bir konumda ışık kaynağı olarak hareket eder.
+
+Box: Alt tabaka olarak hizmet eden bir kutu (veya küp) nesnesi. Bu nesne y-ekseni etrafında dönebilir.
+
+Sphere: Sahnede merkezi bir konumda olan ve şeffaflığını değiştirebilen bir küre.
+
+Text: Kürenin şeffaflık oranını yüzde olarak gösterir.
+
+Cone: Üzerinde rengi dinamik olarak değişebilen bir koni.
+
+App: Ana uygulama bileşeni. Burada, kullanıcının kürenin şeffaflığını (Pil Sağlığı) ve koninin yarıçapını (Şarj Durumu) ayarlamasını sağlayan iki giriş elemanı bulunmaktadır.
+
+Kürenin şeffaflığı, 0-100 arasında bir değerle temsil edilen pil sağlığını (Pil Sağlığı) temsil eder.
+
+Koninin yarıçapı, 0-100 arasında bir değerle temsil edilen şarj durumunu (Şarj Durumu) temsil eder. 
+Ancak bu değer, kullanıcı tarafından girilen değeri 1.63 ile 2.7 arasında bir değere dönüştüren bir formülle hesaplanır.
+
+Kod, React ve React-Three-Fiber (3D grafikler için bir kütüphane) kullanarak modern bir şekilde yazılmıştır.
+
+Birkaç gözlem:
+
+Bu kod, bir 3D sahne oluşturarak belirli parametreleri (pil sağlığı ve şarj durumu) görselleştirmek için kullanılabilir. 
+Uygulamanın hangi platformda (web, mobil vs.) çalıştırılacağına bağlı olarak performans iyileştirmeleri yapılabilir. 
+Özellikle mobil cihazlarda 3D render performansı, kullanılan materyal, ışıklandırma ve nesne sayısına bağlı olarak değişebilir.
